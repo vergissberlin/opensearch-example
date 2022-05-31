@@ -2,8 +2,9 @@
   <ShortName>OSE</ShortName>
   <Description>Example for open search plugin</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://opensearch-example.surge.sh/favicon.ico</Image>
+  <Image width="256" height="256" type="image/x-icon">https://opensearch-example.surge.sh/favicon.png</Image>
   <Url type="text/html" method="get" template="https://opensearch-example.surge.sh/?search={searchTerms}"/>
   <Url type="application/opensearchdescription+xml" rel="self" template="https://opensearch-example.surge.sh/opensearch.xml" />
+  <Url type="application/json" rel="suggestions" template="https://opensearch-example.surge.sh/opensearch-suggest.json?q={searchTerms}" />
   <moz:SearchForm>https://opensearch-example.surge.sh/</moz:SearchForm>
 </OpenSearchDescription>
