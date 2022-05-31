@@ -1,6 +1,7 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>OSE</ShortName>
+  <Name>OpenSearch Example</Name>
+  <ShortName>opensearch-example.surge</ShortName>
   <Description>Example for open search plugin</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Image width="16" height="16" type="image/x-icon">https://opensearch-example.surge.sh/favicon.png</Image>

@@ -26,3 +26,4 @@ Firefox requires you to manually index the site as a search engine. The differen
 - [Chrome manifest.json](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/chrome_settings_overrides#example)
 - [GitHub Repoistory](https://github.com/dewitt/opensearch)
 - [How to](https://dev.to/arthurdenner/how-to-implement-a-search-shortcut-opensearch-on-any-website-3e9i)
+- [Sad story](https://9to5google.com/2022/03/18/chrome-site-search-activate/)
