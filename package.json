@@ -1,0 +1,16 @@
+{
+  "name": "opensearch-example",
+  "version": "1.0.0",
+  "description": "Search with your browser on your page",
+  "main": "index.html",
+  "repository": "https://github.com/vergissberlin/opensearch-example",
+  "author": "André Lademann",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+      "deploy": "./node_modules/.bin/surge ./app opensearch-example.surge.sh"
+  },
+  "devDependencies": {
+    "surge": "^0.23.1"
+  }
+}

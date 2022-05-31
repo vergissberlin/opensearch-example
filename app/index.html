@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/manifest.webmanifest" rel="manifest">
+    <title>OpenSearch 1.1 example</title>
+    <link rel="search" type="application/opensearchdescription+xml" title="OpenSearch example"
+        href="https://opensearch-example.surge.sh/opensearch.xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50">
+
+    <div class="relative flex flex-col items-center justify-center overflow-hidden p-8 sm:p-12">
+        <div class="w-full max-w-4xl rounded-md border-2 border-gray-100 bg-white p-14">
+            <div class="flex flex-col items-center">
+                <h1 class="mt-2 max-w-2xl text-center text-2xl font-light leading-tight sm:text-3xl md:text-4xl
+                    md:leading-tight"> OpenSearch 1.1 example </h1>
+                <form action="/" class="mx-auto mt-4 flex w-full max-w-md flex-col gap-3 sm:flex-row sm:gap-0">
+                    <input type="search" name="search" id="search"
+                        class="grow rounded border-2 border-gray-300 py-3 px-3 focus:border-emerald-500 focus:outline-none sm:rounded-l-md sm:rounded-r-none sm:border-r-0"
+                        placeholder="Start typing" />
+                    <button type="submit"
+                        class="rounded bg-emerald-500 px-5 py-4 font-bold text-white sm:rounded-l-none sm:rounded-r-md">
+                        Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="w-full max-w-4xl rounded-md border-2 border-gray-100 bg-white p-14 font-mono mt-4" id="result">
+            no data
+        </div>
+    </div>
+
+    <script>
+        let param = (new URL(document.location)).searchParams;
+        let data = param.get("search");
+        document.getElementById("search").value = data;
+        document.getElementById("result").innerText = `Search word: ${data}`;
+    </script>
+
+</body>
+
+</html>

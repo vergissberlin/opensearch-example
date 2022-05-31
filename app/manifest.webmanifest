@@ -1,0 +1,30 @@
+{
+    "name": "OpenSearch Example",
+    "short_name": "OSE",
+    "description": "Example for OpenSearch protocol 1.1",
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "standalone",
+    "start_url": "/?search=dirk",
+    "chrome_settings_overrides": {
+        "homepage": "https://opensearch-example.surge.sh",
+        "search_provider": {
+            "name": "OS Example",
+            "search_url": "https://opensearch-example.surge.sh/?search={searchTerms}",
+            "suggest_url": "https://opensearch-example.surge.sh/?search={searchTerms}",
+            "instant_url": "https://opensearch-example.surge.sh/?search={searchTerms}",
+            "image_url": "https://opensearch-example.surge.sh/?search={searchTerms}",
+            "keyword": "disc",
+            "favicon_url": "https://opensearch-example.surge.sh/favicon.ico",
+            "encoding": "UTF-8",
+            "is_default": true
+        }
+    },
+    "icons": [
+        {
+            "src": "/favicon.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ]
+}
