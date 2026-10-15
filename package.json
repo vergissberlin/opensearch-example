@@ -11,6 +11,6 @@
       "deploy": "./node_modules/.bin/surge ./app opensearch-example.surge.sh"
   },
   "devDependencies": {
-    "surge": "^0.23.1"
+    "surge": "^0.44.0"
   }
 }
